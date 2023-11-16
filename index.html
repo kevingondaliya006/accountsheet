@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Account Management</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Add Entry</a></li>
+            <li><a href="weekly.html">Weekly Report</a></li>
+            <li><a href="monthly.html">Monthly Report</a></li>
+            <li><a href="yearly.html">Yearly Report</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Add Entry</h2>
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="addEntry()">Add</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
