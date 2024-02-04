@@ -3,6 +3,11 @@
     background-color: #333;
     color: white;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays above other content */
 }
 
 .navbar-list {
@@ -10,7 +15,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navbar-list li a {
@@ -26,11 +32,21 @@
 
 @media screen and (max-width: 768px) {
     .navbar-list {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navbar-list li {
         margin-bottom: 0.5rem;
     }
+}
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
