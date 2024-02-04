@@ -11,27 +11,35 @@
         <h1>Account Management</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="navbar-list">
             <li><a href="index.html">Add Entry</a></li>
             <li><a href="weekly.html">Weekly Report</a></li>
             <li><a href="monthly.html">Monthly Report</a></li>
             <li><a href="yearly.html">Yearly Report</a></li>
         </ul>
     </nav>
-
     <main>
         <div class="container">
             <h2>Add Entry</h2>
-            <label for="description">Description:</label>
-            <textarea id="description" placeholder="Enter description"></textarea>
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" placeholder="Enter amount">
-            <button onclick="addEntry()">Add</button>
+            <form id="entryForm">
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" placeholder="Enter description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; 2023 Account Management. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
